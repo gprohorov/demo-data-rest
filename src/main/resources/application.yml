@@ -7,4 +7,6 @@ spring:
       database: data-rest
       host: localhost
       port: 27017
-
+    rest:
+      base-path: /api/v1
+      return-body-on-create: true

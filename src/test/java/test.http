@@ -1,5 +1,5 @@
 ### GET request with a header
-GET http://localhost:8080/items
+GET http://localhost:8080/api/v1/items
 Accept: application/json
 
 ### GET request with a header
@@ -7,7 +7,7 @@ GET http://localhost:8080/items/1
 Accept: application/json
 
 ### Send POST request with json body
-POST http://localhost:8080/items
+POST http://localhost:8080/api/v1/items
 Content-Type: application/json
 
 {
