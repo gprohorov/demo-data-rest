@@ -7,6 +7,7 @@ package edu.pro.demodatarest;
   @since 15.01.24 - 14.43
 */
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -14,14 +15,10 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
+@RequiredArgsConstructor
 public class DatabaseLoader implements CommandLineRunner {
 
     private final ItemRepository repository;
-
-    @Autowired
-    public DatabaseLoader(ItemRepository repository) {
-        this.repository = repository;
-    }
 
     @Override
     public void run(String... strings) throws Exception {
